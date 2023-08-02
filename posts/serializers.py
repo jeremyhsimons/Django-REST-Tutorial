@@ -12,11 +12,11 @@ class PostSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 'Image size larger than 2MB'
             )
-        if value.image.width > 4096
+        if value.image.width > 4096:
             raise serializers.ValidationError(
                 'Image width larger than 4096px'
             )
-        if value.image.height > 4096
+        if value.image.height > 4096:
             raise serializers.ValidationError(
                 'Image height larger than 4096px'
             )
@@ -29,7 +29,7 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        field = [
+        fields = [
             'id', 'owner', 'created_at', 'updated_at', 'title', 'content',
             'image', 'is_owner', 'profile_id', 'profile_image', 'image_filter',
         ]
