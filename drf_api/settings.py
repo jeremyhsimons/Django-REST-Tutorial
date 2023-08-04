@@ -63,7 +63,7 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     '8000-jeremyhsimons-django-res-dcad2xfa29.us2.codeanyapp.com',
-    'drf-tutorial.herokuapp.com',
+    'drf-tutorial-890382aa2714.herokuapp.com',
 ]
 
 
